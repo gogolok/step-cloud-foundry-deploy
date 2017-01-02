@@ -26,11 +26,11 @@ Deploy to cloud foundry:
 
 ```yaml
 steps:
-  - USERNAME/cloud-foundry-deploy
+  - gogolok/step-cloud-foundry-deploy
 ...
 deploy:
   steps:
-    - dlapiduz/cloud-foundry-deploy:
+    - gogolok/step-cloud-foundry-deploy:
       api: $CF_API # Set as environment variables
       username: $CF_USER
       password: $CF_PASS
