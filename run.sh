@@ -48,16 +48,16 @@ main() {
 
   # Assign global variables to local
 
-  local appname="$WERCKER_CLOUD_FOUNDRY_DEPLOY_APPNAME"
-  local alt_appname="$WERCKER_CLOUD_FOUNDRY_DEPLOY_ALT_APPNAME"
-  local username="$WERCKER_CLOUD_FOUNDRY_DEPLOY_USERNAME"
-  local password="$WERCKER_CLOUD_FOUNDRY_DEPLOY_PASSWORD"
-  local organization="$WERCKER_CLOUD_FOUNDRY_DEPLOY_ORGANIZATION"
-  local space="$WERCKER_CLOUD_FOUNDRY_DEPLOY_SPACE"
-  local domain="$WERCKER_CLOUD_FOUNDRY_DEPLOY_DOMAIN"
-  local hostname="$WERCKER_CLOUD_FOUNDRY_DEPLOY_HOSTNAME"
-  local api="$WERCKER_CLOUD_FOUNDRY_DEPLOY_API"
-  local skip_ssl="$WERCKER_CLOUD_FOUNDRY_DEPLOY_SKIP_SSL"
+  local appname="$WERCKER_STEP_CLOUD_FOUNDRY_DEPLOY_APPNAME"
+  local alt_appname="$WERCKER_STEP_CLOUD_FOUNDRY_DEPLOY_ALT_APPNAME"
+  local username="$WERCKER_STEP_CLOUD_FOUNDRY_DEPLOY_USERNAME"
+  local password="$WERCKER_STEP_CLOUD_FOUNDRY_DEPLOY_PASSWORD"
+  local organization="$WERCKER_STEP_CLOUD_FOUNDRY_DEPLOY_ORGANIZATION"
+  local space="$WERCKER_STEP_CLOUD_FOUNDRY_DEPLOY_SPACE"
+  local domain="$WERCKER_STEP_CLOUD_FOUNDRY_DEPLOY_DOMAIN"
+  local hostname="$WERCKER_STEP_CLOUD_FOUNDRY_DEPLOY_HOSTNAME"
+  local api="$WERCKER_STEP_CLOUD_FOUNDRY_DEPLOY_API"
+  local skip_ssl="$WERCKER_STEP_CLOUD_FOUNDRY_DEPLOY_SKIP_SSL"
 
   # Validate variables
   if [ -z "$appname" ] || [ -z "$username" ] || [ -z "$password" ] || [ -z "$organization" ] || [ -z "$space" ] ; then
