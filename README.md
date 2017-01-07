@@ -1,6 +1,6 @@
 # cloud-foundry-deploy
 
-Deploys the current path to a cloud foundry instance. You
+Deploys the current path to a cloud foundry instance.
 
 # What's new
 
